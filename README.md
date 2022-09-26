@@ -1,3 +1,3 @@
-# mfishtrom_des327_website
+# Madi Fishtrom's Website for DES 327
 
-The main index.html file is found in html/index.html. The dummy one in the root folder should reroute to this. This html/index.html is the starting page.
+html/index.html is the starting page.
