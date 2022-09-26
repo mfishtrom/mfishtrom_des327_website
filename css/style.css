@@ -1,11 +1,11 @@
 @font-face {
   font-family: msMadi;
-  src: url(fonts/MsMadi-Regular.ttf);
+  src: url(MsMadi-Regular.ttf);
 }
 
 @font-face {
   font-family: Raleway;
-  src: url(fonts/Raleway-VariableFont_wght.ttf);
+  src: url(Raleway-VariableFont_wght.ttf);
 }
 
 body {
