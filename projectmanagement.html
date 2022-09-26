@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madi's Resume</title>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="../css/style.css">
+</head>
+
+<body class="wrapper">
+
+  <header class="box header">
+    <img class="box pfp" src="../images/me.jpeg" alt="Photo of Me in front of a flower wall wearing a mask and holding a bag" height="300">
+    <div class="nav">
+      <h1><a href="index.html" class="home">Madi Fishtrom</a></h1>
+      <div class="dropdown">
+        <button class="dropbtn">Portfolio</button>
+        <nav class="dropdown-content">
+          <a href="projectmanagement.html">Project Management</a> |
+          <a href="webdevelopment.html">Web Development</a> |
+          <a href="graphicdesign.html">Graphic Design</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="box middle">
+    <div>
+
+      <section class="box summary">
+          <p>Project Management</p>
+      </section>
+
+      <hr>
+      </hr>
+
+      <div class="bottom">
+        <button class="collapsible">Call of Duty Playable</button>
+        <div class="content">
+          <iframe src="https://creatives.crossinstall.com/activ_callo_p2/latest/landscape.html?dev_nomraid=1" title="Link to a Call of Duty Interactive Advertisement" class="dropimg"></iframe>
+          <!-- <a href="https://creatives.crossinstall.com/activ_callo_p2/latest/landscape.html?dev_nomraid=1"><img src="images/cod.png" alt="Link to a Call of Duty Interactive Advertisement" class="dropimg"></a> -->
+        </div>
+        <button class="collapsible">Gantt Chart Example</button>
+        <div class="content">
+          <img src="../images/gantt.png" alt="Example of a Gantt Chart Timeline" class="dropimg">
+        </div>
+        <button class="collapsible">It's Always Sunny In Philadelphia Playable</button>
+        <div class="content">
+          <iframe src="https://creatives.crossinstall.com/easts_alway_p2/latest/landscape.html?dev_nomraid=1" title="Link to a Always Sunny Innteractive Advertisement." class="dropimg"></iframe>
+          <!-- <a href="https://creatives.crossinstall.com/easts_alway_p2/latest/landscape.html?dev_nomraid=1"><img src="images/iasip.png" alt="Link to a Always Sunny Innteractive Advertisement." class="dropimg"></a> -->
+        </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+  </main>
+
+  <footer class="box footer">
+    <h3><a href="contact.html">Contact Me<a></h3>
+  </footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
